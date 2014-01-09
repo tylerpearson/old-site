@@ -1,12 +1,10 @@
 ---
 layout: default
-title: Home
+title: Tyler Pearson
 ---
 
 
 {% include header.html %}
-
-    <h1>{{ page.title }}</h1>
 
     {{ content }}
 

@@ -1,0 +1,39 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #0D273A;
+    background-image: url('../images/waves-2.png');
+    background-position: center top;
+    font-family: "ff-dagny-web-pro", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+}
+
+a {
+    //border-bottom: solid 1px @primary;
+    color: @primary;
+    text-decoration: none;
+    transition: all .2s linear;
+    &:hover {
+        border-bottom: none;
+        color: lighten(@primary,25%)
+    }
+}
+
+.container {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
