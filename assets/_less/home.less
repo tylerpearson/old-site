@@ -15,7 +15,7 @@
     margin-top: -10%;
 
     h1 {
-        font-size: 28px;
+        font-size: 29px;
         text-shadow: 0 1px 2px #444;
     }
     a {
@@ -33,10 +33,54 @@
     max-height: 130px;
     float: left;
     margin-right: 30px;
+    border: solid 5px darken(#0D273A,2%);
 }
+
+.socials {
+    margin-top: 60px;
+    text-align: center;
+    opacity: 0.2;
+    transition: opacity .2s linear;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+  .socials-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+          display: inline-block;
+          font-size: 40px;
+          margin: 0 10px;
+      }
+  }
 
 .secondary {
     background-color: #fff;
     height: 100%;
     width: 100%;
+}
+
+
+@media all and (max-width: @breakpoint) {
+
+    .intro-content {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .headshot {
+        max-width: 100px;
+        max-height: 100px;
+        float: none;
+    }
+
+    .intro-content {
+        h1 {
+            font-size: 18px;
+        }
+    }
+
 }

@@ -36,6 +36,29 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
+@charset "UTF-8";
+@font-face{font-family:"SSSocial";src:url('../fonts/icons/ss-social-circle.eot');src:url('../fonts/icons/ss-social-circle.eot?#iefix') format('embedded-opentype'),url('../fonts/icons/ss-social-circle.woff') format('woff'),url('../fonts/icons/ss-social-circle.ttf') format('truetype'),url('../fonts/icons/ss-social-circle.svg#SSSocialCircle') format('svg');font-weight:bold;font-style:normal}@font-face{font-family:"SSSocial";src:url('../fonts/icons/ss-social-regular.eot');src:url('../fonts/icons/ss-social-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/icons/ss-social-regular.woff') format('woff'),url('../fonts/icons/ss-social-regular.ttf') format('truetype'),url('../fonts/icons/ss-social-regular.svg#SSSocialRegular') format('svg');font-weight:normal;font-style:normal}.ss-icon,[class^="ss-"]:before,[class*=" ss-"]:before,.ss-icon.ss-social-circle,[class^="ss-"].ss-social-circle:before,[class*=" ss-"].ss-social-circle:before,.ss-icon.ss-social,[class^="ss-"].ss-social:before,[class*=" ss-"].ss-social:before{font-family:"SSSocial";font-style:normal;font-weight:normal;text-decoration:none;text-rendering:optimizeLegibility;white-space:nowrap;-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";font-feature-settings:"liga","dlig"}
+.ss-icon.ss-social-circle,[class^="ss-"].ss-social-circle:before,[class*=" ss-"].ss-social-circle:before{font-weight:bold}
+.ss-facebook:before{content:''}
+.ss-twitter:before{content:''}
+.ss-linkedin:before{content:''}
+.ss-googleplus:before{content:''}
+.ss-tumblr:before{content:''}
+.ss-wordpress:before{content:''}
+.ss-blogger:before{content:''}
+.ss-posterous:before{content:''}
+.ss-youtube:before{content:''}
+.ss-vimeo:before{content:''}
+.ss-flickr:before{content:''}
+.ss-instagram:before{content:''}
+.ss-pinterest:before{content:''}
+.ss-dribbble:before{content:''}
+.ss-behance:before{content:''}
+.ss-github:before{content:''}
+.ss-paypal:before{content:''}
+.ss-foursquare:before{content:''}
+.ss-skype:before{content:''}
+.ss-mail:before{content:'✉'}
 .highlight{background:#ffffff}
 .highlight .c{color:#999988;font-style:italic}
 .highlight .err{color:#a61717;background-color:#e3d2d2}
@@ -100,11 +123,14 @@ table{border-collapse:collapse;border-spacing:0}
 html,body{height:100%}
 body{background-color:#0D273A;background-image:url('../images/waves-2.png');background-position:center top;font-family:"ff-dagny-web-pro",sans-serif;font-weight:400;line-height:1.6}
 h1,h2,h3,h4,h5{font-weight:400}
-a{color:#49bcd3;text-decoration:none;transition:all .2s linear}a:hover{border-bottom:none;color:#b0e2ec}
+a{color:#49bcd3;text-decoration:none;transition:all .2s linear}a:hover{border-bottom:none;color:#fff}
 .container{max-width:960px;width:90%;margin:0 auto}
 .intro{height:100%;width:100%;display:table;vertical-align:middle}
 .intro-inner{display:table-cell;vertical-align:middle}
-.intro-content{color:#fff;margin-top:-10%}.intro-content h1{font-size:28px;text-shadow:0 1px 2px #444}
+.intro-content{color:#fff;margin-top:-10%}.intro-content h1{font-size:29px;text-shadow:0 1px 2px #444}
 .intro-content a{border-bottom:solid 1px rgba(73,188,211,0.1)}.intro-content a:hover{border-bottom-color:#fff;color:#fff}
-.headshot{border-radius:50%;max-width:130px;max-height:130px;float:left;margin-right:30px}
+.headshot{border-radius:50%;max-width:130px;max-height:130px;float:left;margin-right:30px;border:solid 5px #0b2132}
+.socials{margin-top:60px;text-align:center;opacity:0.2;transition:opacity .2s linear}.socials:hover{opacity:1}
+.socials-list{list-style:none;margin:0;padding:0}.socials-list li{display:inline-block;font-size:40px;margin:0 10px}
 .secondary{background-color:#fff;height:100%;width:100%}
+@media all and (max-width:960px){.intro-content{margin-top:0;text-align:center} .headshot{max-width:100px;max-height:100px;float:none} .intro-content h1{font-size:18px}}

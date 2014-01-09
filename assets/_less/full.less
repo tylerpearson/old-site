@@ -22,18 +22,17 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-    //border-bottom: solid 1px @primary;
     color: @primary;
     text-decoration: none;
     transition: all .2s linear;
     &:hover {
         border-bottom: none;
-        color: lighten(@primary,25%)
+        color: #fff;
     }
 }
 
 .container {
-    max-width: 960px;
+    max-width: @breakpoint;
     width: 90%;
     margin: 0 auto;
 }
