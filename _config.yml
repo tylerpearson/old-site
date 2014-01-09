@@ -1,0 +1,9 @@
+name: typearson.com
+markdown: redcarpet
+pygments: true
+baseurl: /
+
+permalink: /:year/:month/:day/:title.html
+
+
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "Rakefile", "config"]

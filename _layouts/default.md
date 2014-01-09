@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+
+
+{% include header.html %}
+
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+{% include footer.html %}
