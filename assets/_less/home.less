@@ -1,8 +1,9 @@
 .intro {
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
     display: table;
     vertical-align: middle;
+    box-shadow: inset lighten(@dark,7%) 0 0 0 20px;
 }
 
 .intro-inner {
@@ -16,7 +17,7 @@
 
     h1 {
         font-size: 29px;
-        text-shadow: 0 1px 2px #444;
+        text-shadow: 0 1px 2px @dark;
     }
     a {
         border-bottom: solid 1px fade(@primary,10%);
@@ -54,6 +55,9 @@
           display: inline-block;
           font-size: 40px;
           margin: 0 10px;
+          a {
+              text-shadow: 0 1px 2px @dark;
+          }
       }
   }
 
@@ -65,6 +69,10 @@
 
 
 @media all and (max-width: @breakpoint) {
+
+    .intro {
+        box-shadow: none;
+    }
 
     .intro-content {
         margin-top: 0;
