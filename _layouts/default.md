@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tyler Pearson
+title: Tyler Pearson - Web developer in Durham, NC
 ---
 
 
