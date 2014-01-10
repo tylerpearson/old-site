@@ -9,16 +9,15 @@ html, body {
 }
 
 body {
-    background-color: @dark;
-    background-image: url('../images/waves-2.png');
-    background-position: center top;
-    font-family: "ff-dagny-web-pro", sans-serif;
+    font-family: "pt-serif", Georgia, serif;
     font-weight: 400;
     line-height: 1.6;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: 400;
+    font-family: "proxima-nova-soft", "helvetica neue", sans-serif;
 }
 
 a {
@@ -33,6 +32,10 @@ a {
 
 .container {
     max-width: @breakpoint;
-    width: 90%;
+    max-width: 640px;
     margin: 0 auto;
+}
+
+.container.wide-container {
+    max-width: 800px;
 }
