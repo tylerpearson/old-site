@@ -121,8 +121,8 @@ table{border-collapse:collapse;border-spacing:0}
 .highlight .il{color:#099}
 *{-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-o-font-smoothing:antialiased}
 html,body{height:100%}
-body{font-family:"ff-dagny-web-pro",sans-serif;font-weight:400;line-height:1.6;font-size:20px}
-h1,h2,h3,h4,h5{font-weight:400}
+body{font-family:"pt-serif",Georgia,serif;font-weight:400;line-height:1.6;font-size:20px}
+h1,h2,h3,h4,h5{font-weight:400;font-family:"proxima-nova-soft","helvetica neue",sans-serif}
 a{color:#49bcd3;text-decoration:none;transition:all .2s linear}a:hover{border-bottom:none;color:#fff}
 .container{max-width:960px;max-width:640px;margin:0 auto}
 .container.wide-container{max-width:800px}
