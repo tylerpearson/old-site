@@ -1,4 +1,4 @@
-.intro {
+.intro-wrap {
     min-height: 100%;
     min-width: 100%;
     display: table;
@@ -21,8 +21,15 @@
     h1 {
         font-size: 29px;
         text-shadow: 0 1px 2px @dark;
+        font-weight: 400;
+        text-rendering: optimizeLegibility;
+        .amp {
+            font-size: 26px;
+        }
     }
     a {
+        color: lighten(@primary,15%);
+        transition: all .2s linear;
         border-bottom: solid 1px fade(@primary,10%);
         &:hover {
             border-bottom-color: #fff;
@@ -33,20 +40,17 @@
 
 .headshot {
     border-radius: 50%;
-    max-width: 130px;
-    max-height: 130px;
+    max-width: 120px;
+    max-height: 120px;
     float: left;
     margin-right: 30px;
-    border: solid 5px darken(#0D273A,2%);
+    border: solid 7px darken(#0D273A,2%);
+    margin-top: -10px;
 }
 
 .socials {
-    margin-top: 60px;
     text-align: center;
-    opacity: 0.2;
-    transition: opacity .2s linear;
     &:hover {
-        opacity: 1;
     }
 }
 
@@ -59,7 +63,8 @@
           font-size: 40px;
           margin: 0 10px;
           a {
-              text-shadow: 0 1px 2px @dark;
+              color: @dark;
+              border-bottom: 0;
           }
       }
   }
@@ -68,24 +73,32 @@
     background-color: #fff;
     min-height: 100%;
     width: 100%;
+    padding: 5% 0;
 }
 
 
 @media all and (max-width: @breakpoint) {
 
-    .intro {
+    .intro-wrap {
         box-shadow: none;
+        min-height: 50%;
+        padding: 50px 0;
     }
 
     .intro-content {
         margin-top: 0;
         text-align: center;
+
+        h1 .amp {
+            font-size: 20px;
+        }
     }
 
     .headshot {
         max-width: 100px;
         max-height: 100px;
         float: none;
+        margin-top: 5px;
     }
 
     .intro-content {
