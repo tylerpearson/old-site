@@ -1,11 +1,11 @@
-tylerp.co
+tylerp.me
 =============
 
 These are the files for my personal website. It's built on Jekyll and uses Github pages.
 
 ## View
 
-http://tylerp.co
+http://tylerp.me
 
 ## Setup
 
